@@ -13,6 +13,8 @@
         <parameter key="be_simple.sso_auth.client.option.curlopt_sslversion.value">3</parameter>
         <parameter key="be_simple.sso_auth.client.option.curlopt_proxy.key">10004</parameter>
         <parameter key="be_simple.sso_auth.client.option.curlopt_proxy.value"></parameter>
+        <parameter key="be_simple.sso_auth.client.option.curlopt_ssl_verifyhost.key">81</parameter>
+        <parameter key="be_simple.sso_auth.client.option.curlopt_ssl_verifyhost.value">2</parameter>
     </parameters>
 
     <services>
@@ -21,6 +23,7 @@
                 <argument key="%be_simple.sso_auth.client.option.curlopt_ssl_verifypeer.key%">%be_simple.sso_auth.client.option.curlopt_ssl_verifypeer.value%</argument>
 				<argument key="%be_simple.sso_auth.client.option.curlopt_sslversion.key%">%be_simple.sso_auth.client.option.curlopt_sslversion.value%</argument>
                 <argument key="%be_simple.sso_auth.client.option.curlopt_proxy.key%">%be_simple.sso_auth.client.option.curlopt_proxy.value%</argument>
+                <argument key="%be_simple.sso_auth.client.option.curlopt_ssl_verifyhost.key%">%be_simple.sso_auth.client.option.curlopt_ssl_verifyhost.value%</argument>
             </argument>
         </service>
 

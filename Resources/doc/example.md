@@ -69,10 +69,11 @@ When a user successfully authenticates, but is not in the user provider's data s
 then a generic error page is shown indicating that the user was not found. You can customize this error page by overriding the Twig error template,
 as described here: http://symfony.com/doc/current/cookbook/controller/error_pages.html
 
-If necessary, you can disable SSL Certificate Verification
-----------------------------------------------------------
+If necessary, you can disable SSL Certificate and/or Host Verification
+----------------------------------------------------------------------
 
 This is handy when using a development server that does not have a valid certificate, but it should not be done in production.
 
     # app/config/parameters.yml
     be_simple.sso_auth.client.option.curlopt_ssl_verifypeer.value: FALSE
+    be_simple.sso_auth.client.option.curlopt_ssl_verifyhost.value: 0
